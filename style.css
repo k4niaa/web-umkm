@@ -3,67 +3,67 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(247, 243, 243);
+    font-family: Arial, sans-serif;
+    background-color: #fff;
 }
+
+
 header {
     display: flex;
     justify-content: space-between;
-}
-  
-.logo {
-    font-size: 10px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-   
-.logo img {
-    width: 90px;
-   
-}
-nav {
-    display: flex;
     align-items: center;
-    padding-left: 5px;
-    justify-content: space-between;
- 
+    padding: 15px 50px;
+    background-color: #fff;
+    border-bottom: 2px solid #000000;
 }
-nav ul {
+
+header .logo {
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+.logo span {
+    color: #ff9900;
+}
+
+header ul {
     list-style: none;
     display: flex;
 }
-nav ul li {
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-right: 20px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-   margin-top: 10px;
 
+header ul li {
+    margin-left: 20px;
 }
-nav ul li a:hover{
-color:aquamarine;
-transition:0.5s;
+
+header ul li a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    color: #aa7422;
 }
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: rgb(49, 196, 176);
+    background: linear-gradient(125deg, #ffb0b0, #ffff98, #ffffff, #7bb97b) ;
 }
+
 .content h1 {
+   font-family: Tahoma, Geneva;
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: beige;
+    color: rgb(2, 2, 2);
 }
 .order-btn {
-   background-color: #2d03ff;
+   background-color: #b5651d;
    color: white;
    border: 2px solid white;
    font-weight: bold;
@@ -78,6 +78,7 @@ transition:0.5s;
 }
 .ratatoullie img {
     width: 300px;
+    filter: drop-shadow(rgb(44, 44, 53) 2px 20 20 20px) ;
 }
 @media (max-width:768px){
     .hero {
@@ -85,96 +86,116 @@ transition:0.5s;
         text-align: center;
     }
 }
-.ratatoullie-image img {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 300px;
-}
-
-.menu-section {
-    text-align: center;
-    padding: 50px 20px;
-}
-.menu-section h1 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
 .menu-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.menu-item {
-    width: 30%;
-    margin-bottom: 30px;
     text-align: center;
+    margin-top: 20px;
+}
+.title {
+    font-size: 30px;
+    color: #4b2b1c;
+    margin-bottom: 20px;
+}
+.title span{
+    color: #b5651d;
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.menu-item{
+    background-color: #f4a460;
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.menu-item hover {
+    transform: scale(1.1);
 }
 .menu-item img{
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-} 
-.menu item h2 {
-    font-size: 30px;
-    margin: 15px 0;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
 }
-.menu-item p {
-    font-size: 10px;
-    line-height: 1.6;
-    color: #666;
+.menu-info h2{
+    font-size: 1.2rem;
+    color: #fff;
 }
-@media (max-width:768px) {
-    .menu-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+.menu-info p{
+    font-size: 1rem;
+    color: #000000;
 }
-.testimonial {
+.testimonial-container {
     text-align: center;
-}
-h1 {
-    font-size: 40px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
-.review {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-}
-.icon i{
-   width: 50%;
-   color: #000;
-}
-.icon img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-.text {
-    text-align: left;
-}
-h2 {
-    margin: 0;
-    font-size: 1.5em;
-}
-p {
-    margin: 5px 0;
-    font-size: 1em;
+    margin-top: 20px;
 }
 
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #e3b220;
+    margin-top: 30px;
+}
+
+h1 span {
+    color: #000;
+    font-weight: bold;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+ 
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 20%;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.393);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-card img {
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 0.9rem;
+    color: rgb(96, 93, 93);
+    margin-bottom: 10px;
+}
+
+.comment {
+    font-size: 1rem;
+    color: #000000;
+}
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #00fff7;
+    background-color: #c0903e;
    
     max-width: 100%;
     margin: 50px auto;
@@ -233,23 +254,11 @@ p {
     background-color: #555;
 }
 footer {
-    background-color: var(--primary-color);
+    background-color:rgb(255, 255, 255);
     padding: 1rem;
     text-align: center;
-    color: #fff;
+  
   }
   
-  .sosial-icons {
-    display : flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-  .sosial-icons a {
-    margin-right: 1rem;
-    color: #000000;
-    transition: color 0.2s ease;
-  }
   
-  .sosial-icons a:hover {
-    background-color: black;
-  }
+  

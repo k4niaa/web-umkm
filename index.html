@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>projek website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NikeDown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="logo">
-     
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu-section">Product</a></li>
-        <li><a href="#Testimonial">Testimonial</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="hero">
+  <!--head-->
+    <header>
+        <div class="logo">Nike<span>Down.</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu-section">Product</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--home-->
+    <section id="home">
+  <div class="hero">
     <div class="content">
+
       <h1>AYOO!!<br>PILIH TRADISIONAL DAN<br>RASAKAN BEDANYA</h1>
       <a href="#product" class="order-btn">ORDER NOW</a>
     </div>
@@ -32,64 +36,64 @@
   </section>
 
 
-  
+<!--product-->  
   <section id="menu-section">
-    <h1>SEPECIAL MENU</h1>
-    <div class="menu-container">
+   <div class="menu-container">
+    <h1 class="title"><span>SPECIAL </span>MENU</h1>
+    <div class="menu-items">
       <div class="menu-item">
         <img src="getuk.jpeg" alt="getuk">
-        <h2>GETUK</h2>
-        <p>lorem ipsum</p>
-      </div>
-<div class="menu-item">
-  <img src="dawet.jpeg" alt="dawet">
-  <h2>ES DAWET</h2>
-  <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-     Consequuntur necessitatibus, assumenda commodi eum autem praesentium incidunt
-      quibusdam dolores nisi pariatur ducimus a, placeat dignissimos quod vel esse 
-      reprehenderit inventore! Laudantium.</P>
-</div>
-<div class="menu-item">
-  <img src="darlung.jpeg" alt="darlung">
-  <h2>DADAR GULUNG</h2>
-  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Repellat deserunt a quidem animi porro corrupti id alias, 
-     voluptates ratione quisquam qui possimus eius vitae odit nobis necessitatibus 
-     illo sed nulla.</P>
-</div>
-    </div>
-  </section>
-  <section id="Testimonial">
-    <h1>OUR CUSTOMER SAYS</h1>
-    <div class="review">
-      <div class="review">
-        <div class="icon">
-          <img src="reza arap.jpeg" alt="customer1">
-        </div>
-        <div class="text">
-          <h2>YBRAP</h2>
-          <p>lorem ipsum</p>
+        <div class="menu-info">
+          <h2>GETUK LINDRI</h2>
+          <p>Rp.1000</p>
         </div>
       </div>
-    <div class="review">
-      <div class="icon">
-        <img src="erpan1945.jpeg" alt="customer2">
+      <div class="menu-item">
+        <img src="dawet.jpeg" alt="dawet">
+        <div class="menu-info">
+          <h2>ES DAWET</h2>
+          <p>Rp.5000</p>
+        </div>
       </div>
-      <div class="text">
-        <h2>ERPAN 1140</h2>
-        <p>lorem ipsum</p>
-      </div>
-    </div>
-    <div class="review">
-      <div class="icon">
-        <img src="ishowspeed.jpeg" alt="customer3">
-      </div>
-      <div class="text">
-        <h2>ishowspeed</h2>
-        <p>lorem ipsum</p>
+      <div class="menu-item">
+        <img src="darlung.jpeg" alt="darlung">
+        <div class="menu-info">
+          <h2>DADAR GULUNG</h2>
+          <p>Rp.2000</p>
+        </div>
       </div>
     </div>
+   </div>
+
   </section>
+  
+  <!--review-->
+  <section id="testimonial">
+  <div class="testimonial-container">
+    <h1>OUR CUSTOMER <span>SAYS</span></h1>
+    <div class="testimonials">
+        <div class="testimonial-card">
+            <img src="erpan1945.jpeg" alt="erpan1945">
+            <h2>ERPAN1140</h2>
+            <p class="role">happy customer</p>
+            <p class="comment">YANG TRADISIONAL EMANG GAPERNAH GAGAL!!!</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="reza arap.jpeg" alt="arap">
+            <h2>YBRAP</h2>
+            <p class="role">happy customer</p>
+            <p class="comment">Next time kita order lagi, i love getuk</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="ishowspeed.jpeg" alt="ishowspeed">
+            <h2>ISHOWSPEED</h2>
+            <p class="role">happy customer</p>
+            <p class="comment">Mantap euy, seger bet dawetnya. Order 100x juga gabakal nyesel keknya</p>
+        </div>
+    </div>
+</div>
+</section>
+  <!--contact-->
 <section id="contact">
       <div class="container">
           <div class="contact-info">
@@ -112,11 +116,9 @@
                   <button type="submit">Submit</button>
               </form>
             </section>
+
+            <!--footer-->
             <footer>
-              <div class="sosial-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
               <p>alamat toko: jl.in ana no. 25 kota bandung | Telepon: 0852121212212</p>
               <p>&copy; 2024 NikeDown. Semua hak dilindungi.</p>
             </footer>
